@@ -1,10 +1,10 @@
 // //////////////////////////////////////////////////////////////
 // Factorialize a Number
 // //////////////////////////////////////////////////////////////
-
 function factorialize(num) {
 
-  var result = 1;
+  var result;
+
   for (var ii = 2; ii <= num; ii++) {
 
     result *= ii;
@@ -14,5 +14,6 @@ function factorialize(num) {
   return result;
 
 }
+
 // Use
 factorialize(5);
