@@ -1,0 +1,18 @@
+// //////////////////////////////////////////////////////////////
+// Factorialize a Number
+// //////////////////////////////////////////////////////////////
+
+function factorialize(num) {
+
+  var result = 1;
+  for (var ii = 2; ii <= num; ii++) {
+
+    result *= ii;
+
+  }
+
+  return result;
+
+}
+// Use
+factorialize(5);

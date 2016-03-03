@@ -1,0 +1,15 @@
+// //////////////////////////////////////////////////////////////
+// Reverse a String
+// //////////////////////////////////////////////////////////////
+
+function reverseString(str) {
+
+  var myArray = str.split("");
+  myArray.reverse();
+  str = myArray.join("");
+
+  return str;
+
+}
+// Use
+reverseString("hello");
