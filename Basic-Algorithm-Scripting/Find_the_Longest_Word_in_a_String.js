@@ -1,8 +1,8 @@
 /**
  * [findLongestWord]
  * Return the length of the longest word in the provided sentence.
- * @param  {[String]} str
- * @return {[Number]}     [length of the longest word]
+ * @param  {String} str
+ * @return {Number}     [length of the longest word]
  */
 function findLongestWord(str) {
 
@@ -10,9 +10,11 @@ function findLongestWord(str) {
   var result = 0;
 
   for (var ii = 0; ii < myArray.length; ii++) {
+
     if (myArray[ii].length > result) {
       result = myArray[ii].length;
     }
+
   }
 
   return result;

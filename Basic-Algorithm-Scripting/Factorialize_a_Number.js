@@ -1,6 +1,9 @@
-// //////////////////////////////////////////////////////////////
-// Factorialize a Number
-// //////////////////////////////////////////////////////////////
+/**
+ * [factorialize]
+ * Factorialize a Number.
+ * @param  {Integer} num
+ * @return {Integer}
+ */
 function factorialize(num) {
 
   var result;

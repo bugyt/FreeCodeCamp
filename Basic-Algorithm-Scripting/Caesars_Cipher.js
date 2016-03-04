@@ -2,14 +2,14 @@
  * [rot13]
  * Caesars Cipher :
  * Takes a ROT13 encoded string as input and returns a decoded string.
- * @param  {[String]} str
- * @return {[String]}
+ * @param  {String} str
+ * @return {String}
  */
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) {
 
-  str = str.replace(/[a-zA-Z]/g,function(c) {
+  str = str.replace(/[a-zA-Z]/g, function(c) {
 
-    return String.fromCharCode((c <= 'Z'?90:122) >= (c = c.charCodeAt(0) + 13)?c:c - 26);
+    return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
 
   });
 

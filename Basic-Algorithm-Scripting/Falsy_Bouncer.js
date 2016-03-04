@@ -8,10 +8,13 @@
 function bouncer(arr) {
 
   var filtered = arr.filter(function(element) {
+
     return element;
+
   });
 
   return filtered;
+
 }
 
 // Use
