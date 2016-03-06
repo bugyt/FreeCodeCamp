@@ -14,24 +14,30 @@ function smallestCommons(arr) {
   }
 
   var res = 0;
+  var ii = 1;
 
   arr.sort(sortAscNumber);
 
-  var ii = 1;
+  while (res === 0) {
 
-  do {
     res = arr[1] * (arr[1] - 1) * ii;
+
     for (var jj = arr[0] + 1; jj < arr[1]; jj++) {
+
       if (res % jj !== 0) {
+
         res = 0;
         break;
+
       }
+
     }
 
     ii++;
-  } while (res === 0);
+  }
 
   return res;
+
 }
 
 
